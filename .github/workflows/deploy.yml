@@ -26,11 +26,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: portfolio/package-lock.json
+          cache-dependency-path: aatish_patel/package-lock.json
       - run: npm install
-        working-directory: portfolio
+        working-directory: aatish_patel
       - run: npm run build
-        working-directory: portfolio
+        working-directory: aatish_patel
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
