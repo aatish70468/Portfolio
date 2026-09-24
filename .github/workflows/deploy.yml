@@ -25,12 +25,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: aatish_patel/package-lock.json
       - run: npm install
-        working-directory: aatish_patel
       - run: npm run build
-        working-directory: aatish_patel
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
